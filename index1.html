@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="script.js"></script>
+<link rel="stylesheet" href="style.css">
+    <title>Interest Calculator</title>
+    
+
+    </head>
+    
+    <body>
+       
+        <div class="maindiv">
+         
+            <h1>Simple Interest</h1>
+
+            <form id="form" onsubmit="check()">
+                Amount <input type="number" 
+                 id="principal">  <br><br>
+                Interest Rate <input type="range"  
+                id="rate" min="1" max="20" step="0.25" 
+                 value="10.25" 
+                 
+                onchange="updateRate()">
+                 <span id="rate_val" class="percent">10.25</span>  <br><br>
+                No. of Years <select id="years">
+                                <option value="0">1</option>
+                                <option value="1">2</option>
+                                <option value="2">3</option>
+                                <option value="3">4</option>
+                                <option value="4">5</option>
+                                
+                            </select>  <br></br>
+                <br></br>
+                <button type="button" onclick="compute()">Compute Interest</button><br><br> 
+<span id="result" class ="results" ></span>
+              
+              
+            </form>
+
+            <footer>
+                <br>
+                &#169; This Calculator belongs to --AMNA--
+            </br>
+            </footer>
+        </div>
+    </body>
+</html>
